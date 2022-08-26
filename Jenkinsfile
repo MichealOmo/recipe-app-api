@@ -11,7 +11,7 @@ pipeline {
     stage("remove-old") {
       steps {
         sh """
-          docker-compose stop recipe-app-api || true
+          docker-compose stop app || true
         """
       }
     }
